@@ -1,0 +1,124 @@
+@media only screen and (min-width: 38rem) {
+
+  /* ==========================================================================
+     1. CONTAINER / PAGE LAYOUT
+     ========================================================================== */
+  /* Center content within a max width */
+  header, main, nav, footer {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  /* ==========================================================================
+     2. HEADER
+     ========================================================================== */
+  header {
+    display: grid;
+    grid-template-columns: 24px auto;
+  }
+
+  /* ==========================================================================
+     3. NAVIGATION
+     ========================================================================== */
+  /* Navigation adjustments */
+  .hamburger {
+    display: none;
+  }
+
+  .navigation {
+    display: block;
+  }
+
+  .navigation a {
+    padding: 7px;
+    border: none;
+  }
+
+  .navigation ul {
+    background-color: #1e293b;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* ==========================================================================
+     4. DESKTOP GRID LAYOUT (MAIN CONTENT)
+     ========================================================================== */
+  /* Desktop Grid Layout for Main Content */
+  main {
+    display: grid !important;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "title title"
+      "about photo"
+      "courses courses";
+    gap: 20px;
+    align-items: stretch;
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /* Wireframe section placements */
+  main h1 {
+    grid-area: title;
+  }
+
+  .card {
+    grid-area: about;
+    margin-bottom: 0;
+  }
+
+  /* ==========================================================================
+     5. STUDENT PHOTO CARD
+     ========================================================================== */
+  /* Student Photo Card */
+  .photo-card {
+    grid-area: photo;
+    margin-bottom: 0;
+    padding: 0 !important;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo-card h2 {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .photo-card img {
+    width: 50% !important;
+    max-width: 250px !important;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 15px auto;
+    border-radius: 4px;
+  }
+
+  /* ==========================================================================
+     6. COURSES & FILTER BUTTONS
+     ========================================================================== */
+  .courses-card {
+    grid-area: courses;
+    margin-bottom: 0;
+  }
+
+  /* 3-COLUMN LAYOUT FOR COURSE BUTTONS AND COURSES */
+  .filter-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+
+  .course-list,
+  .courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+}

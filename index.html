@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <meta name="description" content="This is my hamburger project">
+  <meta name="author" content="Arowolaje Joshua">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
-    
+
+  <!-- HEADER SECTION -->
+  <header>
+    <img src="images/home-icon.svg">
+    <span>Josh Plan</span>
+    <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
+  </header>
+
+  <!-- NAVIGATION SECTION -->
+  <nav id="nav-bar" class="navigation">
+    <ul>
+      <li class="current"><a href="#">Home</a></li>
+      <li><a href="#">Chamber Project</a></li>
+      <li><a href="#">Final Project</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <h1>Arowolaje Joshua Oluwatimileyin</h1>
+
+    <!-- About Me Card -->
+    <section class="card">
+      <h2>About Me</h2>
+      <p>Hello! My name is Arowolaje Joshua Oluwatimileyin and I am from Oyo state Nigeria but I reside in Lagos state. I'm a creative tech lover who enjoys learning new things, building websites, and improving my computer skills. I also enjoy gaming because it helps me relax and have fun. I like exploring technology, solving problems, and working on projects, that help me grow in school life. I believe consistency, patience, and hard work are important qualities that can help anyone succeed in life.</p>
+    </section>
+
+    <!-- Student Photo Card -->
+    <section class="photo-card">
+      <h2>Student Photo</h2>
+      <img src="images/profile-picture.jpg" alt="Profile Picture">
+    </section>
+
+    <!-- Web Certificate Courses Card -->
+    <section class="courses-card">
+      <h2>Web Certificate Course</h2>
+
+      <div class="filter-buttons">
+        <button class="btn">ALL</button>
+        <button class="btn">CSE</button>
+        <button class="btn">WDD</button>
+      </div>
+
+      <div class="course-list">
+        <button class="course-pill">WDD 130</button>
+        <button class="course-pill">WDD 131</button>
+        <button class="course-pill">WDD 231</button>
+      </div>
+
+      <p class="credits-total">The total credits for course listed above is <span>6</span></p>
+    </section>
+  </main>
+
+  <!-- FOOTER SECTION -->
+  <footer>
+    <div class="social">
+      <a href="https://github.com/paulcheney" target="_blank"><img src="images/github.svg" alt="Github" width="16" height="16"></a>
+      <a href="https://www.linkedin.com/in/pcheney" target="_blank"><img src="images/linkedin.svg" alt="Linkedin" width="16" height="16"></a>
+      <a href="https://www.facebook.com/paul.cheney.1422/" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+      <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="Twitter" width="16" height="16"></a>
+    </div>
+
+    <div class="footer-info">
+      <p>&copy; <span id="currentyear"></span> Arowolaje Joshua Oluwatimileyin Nigeria</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+
 </body>
 </html>
