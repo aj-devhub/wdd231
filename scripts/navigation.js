@@ -1,13 +1,7 @@
-const navbutton = document.querySelector('#ham-btn');
-const navLinks = document.querySelector('#nav-bar');
+const navButton = document.querySelector('#nav-button');
+const navBar = document.querySelector('#nav-bar');
 
-document.getElementById("currentyear").textContent =
-    new Date().getFullYear();
-
-document.getElementById("lastModified").textContent =
-    `Last Modified: ${document.lastModified}`;
-
-navbutton.addEventListener('click', () => {
-    navbutton.classList.toggle('show');
-    navLinks.classList.toggle('show');
+navButton.addEventListener('click', () => {
+  navButton.classList.toggle('show');
+  navBar.classList.toggle('show');
 });

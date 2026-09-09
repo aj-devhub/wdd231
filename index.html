@@ -3,81 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <meta name="description" content="This is my hamburger project">
-  <meta name="author" content="Arowolaje Joshua">
+  <title>WDD 231 - Course Homepage</title>
+  <meta name="description" content="Course homepage for WDD 231: Web Frontend Development featuring personal profile, student photo, and course certificate progress.">
+  <meta name="author" content="Arowolaje Joshua Oluwatimileyin">
+  
+  <!-- Google Fonts API -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/larger.css">
-  <link rel="stylesheet" href="styles/normalize.css">
+  
+  <!-- Scripts with defer attribute -->
   <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
 </head>
 <body>
 
-  <!-- HEADER SECTION -->
   <header>
-    <img src="images/home-icon.svg">
+    <img src="images/home-icon.svg" alt="Site Logo" width="1" height="1">
     <span>Josh Plan</span>
-    <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
+    <button id="nav-button" class="hamburger" aria-label="Toggle navigation menu"></button>
   </header>
 
-  <!-- NAVIGATION SECTION -->
   <nav id="nav-bar" class="navigation">
     <ul>
       <li class="current"><a href="#">Home</a></li>
-      <li><a href="#">Chamber Project</a></li>
-      <li><a href="#">Final Project</a></li>
+      <li><a href="#">Chamber</a></li>
+      <li><a href="#">Final</a></li>
     </ul>
   </nav>
 
-  <!-- MAIN CONTENT -->
   <main>
-    <h1>Arowolaje Joshua Oluwatimileyin</h1>
+    <h1>Home</h1>
+    
+    <div class="grid-container">
+      <!-- Section 1: About Me -->
+      <section class="card about">
+        <h2>About Me</h2>
+        <p>Welcome to my WDD 231 course home page. My name is Arowolaje Joshua Oluwatimileyin and I am from Oyo state Nigeria but I reside in Lagos state. I'm a creative tech lover who enjoys learning new things, building websites, and improving my computer skills. I also enjoy gaming because it helps me relax and have fun. I like exploring technology, solving problems, and working on projects, that help me grow in school life. I believe consistency, patience, and hard work are important qualities that can help anyone succeed in life. I am studying web frontend development, mastering responsive design techniques, dynamic JavaScript user interfaces, and accessible design principles.</p>
+      </section>
 
-    <!-- About Me Card -->
-    <section class="card">
-      <h2>About Me</h2>
-      <p>Hello! My name is Arowolaje Joshua Oluwatimileyin and I am from Oyo state Nigeria but I reside in Lagos state. I'm a creative tech lover who enjoys learning new things, building websites, and improving my computer skills. I also enjoy gaming because it helps me relax and have fun. I like exploring technology, solving problems, and working on projects, that help me grow in school life. I believe consistency, patience, and hard work are important qualities that can help anyone succeed in life.</p>
-    </section>
+      <!-- Section 2: Student Photo -->
+      <section class="card photo">
+        <h2>Student Photo</h2>
+        <img src="images/profile-picture.jpg" alt="Arowolaje Joshua" width="250" height="250" loading="lazy">
+      </section>
 
-    <!-- Student Photo Card -->
-    <section class="photo-card">
-      <h2>Student Photo</h2>
-      <img src="images/profile-picture.jpg" alt="Profile Picture">
-    </section>
+      <!-- Section 3: Web Certificate Courses -->
+      <section class="card certificate">
+        <h2>Web Certificate Courses</h2>
+        
+        <div class="filter-buttons">
+          <button id="all-btn" class="active">All</button>
+          <button id="cse-btn">CSE</button>
+          <button id="wdd-btn">WDD</button>
+        </div>
 
-    <!-- Web Certificate Courses Card -->
-    <section class="courses-card">
-      <h2>Web Certificate Course</h2>
-
-      <div class="filter-buttons">
-        <button class="btn">ALL</button>
-        <button class="btn">CSE</button>
-        <button class="btn">WDD</button>
-      </div>
-
-      <div class="course-list">
-        <button class="course-pill">WDD 130</button>
-        <button class="course-pill">WDD 131</button>
-        <button class="course-pill">WDD 231</button>
-      </div>
-
-      <p class="credits-total">The total credits for course listed above is <span>6</span></p>
-    </section>
+        <div id="course-container" class="course-grid"></div>
+        <p id="total-credits" class="credit-summary"></p>
+      </section>
+    </div>
   </main>
 
-  <!-- FOOTER SECTION -->
   <footer>
-    <div class="social">
-      <a href="https://github.com/paulcheney" target="_blank"><img src="images/github.svg" alt="Github" width="16" height="16"></a>
-      <a href="https://www.linkedin.com/in/pcheney" target="_blank"><img src="images/linkedin.svg" alt="Linkedin" width="16" height="16"></a>
-      <a href="https://www.facebook.com/paul.cheney.1422/" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
-      <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="Twitter" width="16" height="16"></a>
+    <div class="social-links">
+      <img src="images/github.svg" alt="GitHub Logo" width="30" height="30">
+      <img src="images/linkedin.svg" alt="LinkedIn Logo" width="30" height="30">
     </div>
 
-    <div class="footer-info">
-      <p>&copy; <span id="currentyear"></span> Arowolaje Joshua Oluwatimileyin Nigeria</p>
-      <p id="lastModified"></p>
-    </div>
+    <p>&copy; <span id="currentyear"></span> | Arowolaje Joshua Oluwatimileyin | Nigeria</p>
+    <p id="lastModified"></p>
   </footer>
 
 </body>
