@@ -1,0 +1,327 @@
+/* ==============================
+   GENERAL STYLES
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+}
+
+
+/* ==============================
+   HEADER
+================================= */
+
+header {
+    background-color: #12355b;
+    color: white;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+header span {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+
+/* ==============================
+   HAMBURGER MENU
+================================= */
+
+.hamburger {
+    display: block;
+    width: 44px;
+    height: 44px;
+    position: relative;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+
+/* Three hamburger lines */
+
+.hamburger::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 12px;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+
+    box-shadow:
+        0 9px 0 white,
+        0 18px 0 white;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        top 0.3s ease;
+}
+
+
+/* Change hamburger into X */
+
+.hamburger.open::before {
+    top: 21px;
+    transform: rotate(45deg);
+    box-shadow: none;
+}
+
+
+/* Second line of the X */
+
+.hamburger.open::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 21px;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+
+    transform: rotate(-45deg);
+
+    transition: transform 0.3s ease;
+}
+
+
+/* ==============================
+   NAVIGATION
+================================= */
+
+nav {
+    display: none;
+    grid-column: 1 / -1;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    width: 100%;
+    padding: 0.9rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #f4b942;
+    color: #12355b;
+}
+
+
+/* ==============================
+   MAIN
+================================= */
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h1 {
+    color: #12355b;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+
+/* ==============================
+   GRID / LIST BUTTONS
+================================= */
+
+.view-button {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.view-button button {
+    padding: 0.7rem 1.5rem;
+    border: 2px solid #12355b;
+    border-radius: 4px;
+    background-color: white;
+    color: #12355b;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.view-button button:hover {
+    background-color: #f4b942;
+}
+
+
+/* ==============================
+   DIRECTORY GRID
+================================= */
+
+#members.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+
+/* ==============================
+   MEMBER CARDS
+================================= */
+
+#members article {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#members article img {
+    width: 100%;
+    max-width: 180px;
+    height: 130px;
+    object-fit: contain;
+    margin-bottom: 0.75rem;
+}
+
+#members article h2 {
+    color: #12355b;
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+}
+
+#members article p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
+#members article a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #12355b;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* ==============================
+   LIST VIEW
+================================= */
+
+#members.list {
+    display: block;
+}
+
+#members.list article {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+#members.list article img {
+    display: none;
+}
+
+
+/* ==============================
+   FOOTER
+================================= */
+
+footer {
+    background-color: #12355b;
+    color: white;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+footer p {
+    margin: 0.4rem 0;
+    line-height: 1.5;
+}
+
+
+/* ==============================
+   SOCIAL LINKS
+================================= */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-links a {
+    display: inline-block;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* ==============================
+   PREVENT OVERFLOW
+================================= */
+
+main,
+header,
+footer {
+    max-width: 100%;
+}

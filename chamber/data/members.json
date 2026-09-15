@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Lagos Tech Solutions",
+        "address": "15 Allen Avenue, Ikeja, Lagos",
+        "phone": "+234 801 234 5678",
+        "website": "https://lagostechsolutions.com",
+        "image": "lagos-tech.jpg",
+        "membershipLevel": 3,
+        "description": "Technology solutions and digital services for growing businesses.",
+        "industry": "Technology"
+    },
+    {
+        "name": "Bright Future Foods",
+        "address": "24 Admiralty way",
+        "phone": "+234 801 234 5678",
+        "website": "https://brightfuturefoods.com",
+        "image": "bright-future-foods.jpg",
+        "membershipLevel": 3,
+        "description": "Technology solutions and digital services for growing businesses.",
+        "industry": "Technology"
+    },
+    {
+        "name": "GreenCity Properties",
+        "address": "8 Bourdillon Road Ikoyi Lagos",
+        "phone": "+234 801 234 5678",
+        "website": "https://greencityproperties.com",
+        "image": "greencity-properties.jpg",
+        "membershipLevel": 3,
+        "description": "Real estate services for homes, offices, and commercial properties.",
+        "industry": "Real Estate"
+    },
+    {
+        "name": "PrimeStyle Fashion",
+        "address": "32 Toyin Street, Ikeja, Lagos",
+        "phone": "+234 801 234 5678",
+        "website": "https://primestylefashion.com",
+        "image": "primestyle-fashion.jpg",
+        "membershipLevel": 1,
+        "description": "Fashion design and clothing services for individuals and businesses.",
+        "industry": "Fashion"
+    },
+    {
+        "name": "SwiftMove Logistics",
+        "address": "11 Apapa-Oshodi Expressway, Lagos",
+        "phone": "+234 801 234 5678",
+        "website": "https://swiftmovelogistics.com",
+        "image": "swiftmove-logistics.jpg",
+        "membershipLevel": 2,
+        "description": "Reliable delivery and logistics services across Lagos.",
+        "industry": "Logistics"
+    },
+    {
+        "name": "Lagos Creative Studio",
+        "address": "19 Yaba Road, Yaba, Lagos",
+        "phone": "+234 801 234 5678",
+        "website": "https://lagoscreativestudio.com",
+        "image": "lagos-creative-studio.jpg",
+        "membershipLevel": 1,
+        "description": "Creative design, branding, photography, and digital media services.",
+        "industry": "Creative Services"
+    },
+    {
+        "name": "UrbanCare Pharmacy",
+        "address": "45 Awolowo Road, Ikoyi, Lagos",
+        "phone": "+234 807 890 1234",
+        "website": "https://urbancarepharmacy.example.com",
+        "image": "urbancare-pharmacy.jpg",
+        "membershipLevel": 2,
+        "description": "A community-focused pharmacy serving local residents.",
+        "industry": "Healthcare"
+    },
+    {
+        "name": "NextGen Learning Center",
+        "address": "7 Herbert Macaulay Way, Yaba, Lagos",
+        "phone": "+234 808 901 2345",
+        "website": "https://nextgenlearning.example.com",
+        "image": "nextgen-learning.jpg",
+        "membershipLevel": 3,
+        "description": "Technology-focused education and professional training for students and businesses.",
+        "industry": "Education"
+    }
+]
