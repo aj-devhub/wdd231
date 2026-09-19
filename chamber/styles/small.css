@@ -325,3 +325,91 @@ header,
 footer {
     max-width: 100%;
 }
+
+
+
+
+
+
+
+/* HOME PAGE */
+
+.hero {
+    margin-bottom: 2rem;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    padding: 1.5rem;
+    background-color: white;
+}
+
+.hero-content h1 {
+    color: #12355b;
+    margin-top: 0;
+}
+
+.hero-content p {
+    line-height: 1.5;
+}
+
+.hero-content a {
+    display: inline-block;
+    padding: 0.8rem 1.2rem;
+    background-color: #f4b942;
+    color: #12355b;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.events {
+    margin-bottom: 2rem;
+}
+
+.events article {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.events h2,
+.weather h2,
+.spotlights h2 {
+    color: #12355b;
+}
+
+.weather {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.spotlights {
+    margin-bottom: 2rem;
+}
+
+.spotlights article {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.spotlights h3 {
+    color: #12355b;
+}
+
+.spotlights p {
+    line-height: 1.5;
+}

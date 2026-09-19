@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lagos Business Connect | Home</title>
+
+    <meta name="description" content="Welcome to the Lagos Business Connect, connecting businesses and supporting economic growth in Lagos">
+    <meta name="author" content="Arowolaje Joshua Oluwatimileyin">
+    <meta property="og:tittle" content="WDD 231 - Chamber Project">
+    <meta property="og:description" content="Welcome to my WDD 231 course homepage featuring web development">
+    <meta property="og:image" content= "https://aj-devhub.github.io/wdd231/images/profile-picture.jpg">
+    <meta property="og:url" content="https://aj-devhub.github.io/wdd231/chamber/directory.html">
+
+    <!--Links-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/directory.js" defer></script>
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img src="images/Site-plan.png" alt="Site Logo" width="1" height="1">
+        <span>Josh</span>
+        <button id="nav-button" class="hamburger" aria-label="Toggle navigation menu"></button>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="directory.html" class="active">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+    </header>
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="images/hero-banner.jpg" alt="Business professionals working together">
+
+            <div class="hero-content">
+                <h1>Lagos Business Connect</h1>
+                <p>Connecting businesses and creating opportunities in our community.</p>
+                <a href="join.html">Join the Chamber</a>
+            </div>
+        </section>
+
+
+        <!-- Current Events Section -->
+        <section class="events">
+            <h2>Current Events</h2>
+
+            <article>
+                <h3>Business Networking Event</h3>
+                <p>Connect with local business owners and professionals.</p>
+                <p>September 25, 2026</p>
+            </article>
+
+            <article>
+                <h3>Entrepreneurship Workshop</h3>
+                <p>Learn practical strategies for growing your business.</p>
+                <p>October 3, 2026</p>
+            </article>
+        </section>
+
+
+        <!-- Weather Section -->
+        <section class="weather">
+            <h2>Weather</h2>
+
+            <p>
+                Current temperature:
+                <span id="current-temp"></span>
+            </p>
+
+            <p>
+                Weather:
+                <span id="weather-description"></span>
+            </p>
+        </section>
+
+
+        <!-- Company Spotlights Section -->
+        <section class="spotlights">
+            <h2>Company Spotlights</h2>
+
+            <article>
+                <h3>Lagos Tech Solutions</h3>
+                <p>
+                    Providing innovative technology solutions for businesses in Lagos.
+                </p>
+            </article>
+
+            <article>
+                <h3>Bright Future Foods</h3>
+                <p>
+                    Providing quality food products to the local community.
+                </p>
+            </article>
+
+            <article>
+                <h3>GreenCity Properties</h3>
+                <p>
+                    Providing real estate solutions for homes and businesses.
+                </p>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-business">
+            <h2>Lagos Business</h2>
+
+            <p>10 Business venue</p>
+            <p>Lagos, Nigeria</p>
+            <p>info@lagosbusinessconnect.com</p>
+            <p>+234 800 0000</p>
+        </div>
+
+        <div class="social-links">
+            <img src="images/github.svg" alt="GitHub Logo" width="30" height="30">
+            <img src="images/linkedin.svg" alt="LinkedIn Logo" width="30" height="30">
+            <img src="images/facebook.svg" alt="Facebook Logo" width="30" height="30">
+        </div>
+
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>&copy; <span id="currentyear"></span> | Arowolaje Joshua Oluwatimileyin | Nigeria</p>
+            <p id="lastModified"></p> 
+        </div>
+
+    </footer>
+
+</body>
+</html>
