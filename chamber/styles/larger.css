@@ -170,3 +170,52 @@
         margin-bottom: 0;
     }
 }
+
+
+
+
+
+    /* ==============================
+       JOIN PAGE
+    ================================= */
+
+    .join-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+
+    .join-form {
+        margin-bottom: 0;
+    }
+
+    .membership-levels {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-bottom: 0;
+    }
+
+    .membership-levels h2 {
+        margin-top: 0;
+    }
+
+    .membership-card {
+        margin-bottom: 0;
+    }
+
+
+    /* ==============================
+       THANK YOU PAGE
+    ================================= */
+
+    .thankyou {
+        max-width: 800px;
+        margin: 0 auto 2rem;
+        padding: 2rem;
+    }
+
+    .submitted-info {
+        margin-top: 2rem;
+    }

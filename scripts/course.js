@@ -66,41 +66,81 @@ const totalCreditsEl = document.querySelector('#total-credits');
 const allBtn = document.querySelector('#all-btn');
 const cseBtn = document.querySelector('#cse-btn');
 const wddBtn = document.querySelector('#wdd-btn');
+const courseDetails = document.querySelector('#course-details');
 
 function renderCourses(filteredCourses) {
-  courseContainer.innerHTML = '';
-  
-  filteredCourses.forEach(course => {
-    const card = document.createElement('div');
-    card.classList.add('course-card');
-    card.classList.add(course.completed ? 'completed' : 'uncompleted');
-    card.textContent = `${course.subject} ${course.number}`;
-    courseContainer.appendChild(card);
-  });
+    courseContainer.innerHTML = '';
 
-  const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
-  totalCreditsEl.textContent = `The total credits for courses listed above is ${totalCredits}`;
+    filteredCourses.forEach(course => {
+        const card = document.createElement('div');
+
+        card.classList.add('course-card');
+        card.classList.add(course.completed ? 'completed' : 'uncompleted');
+        card.textContent = `${course.subject} ${course.number}`;
+
+        card.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
+
+        courseContainer.appendChild(card);
+    });
+
+    const totalCredits = filteredCourses.reduce(
+        (sum, course) => sum + course.credits,
+        0
+    );
+
+    totalCreditsEl.textContent =
+        `The total credits for courses listed above is ${totalCredits}`;
 }
 
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+
+    courseDetails.showModal();
+
+    const closeModal = document.querySelector('#closeModal');
+
+    closeModal.addEventListener('click', () => {
+        courseDetails.close();
+    });
+}
+
+courseDetails.addEventListener('click', event => {
+    if (event.target === courseDetails) {
+        courseDetails.close();
+    }
+});
+
 function setActiveButton(activeBtn) {
-  [allBtn, cseBtn, wddBtn].forEach(btn => btn.classList.remove('active'));
-  activeBtn.classList.add('active');
+    [allBtn, cseBtn, wddBtn].forEach(btn => {
+        btn.classList.remove('active');
+    });
+
+    activeBtn.classList.add('active');
 }
 
 allBtn.addEventListener('click', () => {
-  renderCourses(courses);
-  setActiveButton(allBtn);
+    renderCourses(courses);
+    setActiveButton(allBtn);
 });
 
 cseBtn.addEventListener('click', () => {
-  renderCourses(courses.filter(c => c.subject === 'CSE'));
-  setActiveButton(cseBtn);
+    renderCourses(courses.filter(course => course.subject === 'CSE'));
+    setActiveButton(cseBtn);
 });
 
 wddBtn.addEventListener('click', () => {
-  renderCourses(courses.filter(c => c.subject === 'WDD'));
-  setActiveButton(wddBtn);
+    renderCourses(courses.filter(course => course.subject === 'WDD'));
+    setActiveButton(wddBtn);
 });
 
-// Initial Render
 renderCourses(courses);

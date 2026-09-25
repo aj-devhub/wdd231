@@ -413,3 +413,229 @@ footer {
 .spotlights p {
     line-height: 1.5;
 }
+
+
+
+
+/* ==============================
+   JOIN PAGE
+================================= */
+
+.join-container {
+    display: block;
+}
+
+.join-form {
+    background-color: white;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.join-form h2,
+.membership-levels h2 {
+    color: #12355b;
+}
+
+.join-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.join-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-weight: bold;
+    color: #222;
+}
+
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"],
+.join-form select,
+.join-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font: inherit;
+}
+
+.join-form textarea {
+    resize: vertical;
+}
+
+.join-form input:focus,
+.join-form select:focus,
+.join-form textarea:focus {
+    outline: 2px solid #f4b942;
+    border-color: #12355b;
+}
+
+.join-form input[type="submit"] {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #12355b;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.join-form input[type="submit"]:hover {
+    background-color: #f4b942;
+    color: #12355b;
+}
+
+
+/* ==============================
+   MEMBERSHIP LEVELS
+================================= */
+
+.membership-levels {
+    margin-bottom: 2rem;
+}
+
+.membership-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    animation: card-entrance 0.8s ease both;
+}
+
+.membership-card:nth-of-type(2) {
+    animation-delay: 0.2s;
+}
+
+.membership-card:nth-of-type(3) {
+    animation-delay: 0.4s;
+}
+
+.membership-card:nth-of-type(4) {
+    animation-delay: 0.6s;
+}
+
+.membership-card h3 {
+    color: #12355b;
+    margin-top: 0;
+}
+
+.membership-card a {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    background-color: #f4b942;
+    color: #12355b;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.membership-card a:hover {
+    background-color: #12355b;
+    color: white;
+}
+
+
+/* ==============================
+   MEMBERSHIP CARD ANIMATION
+================================= */
+
+@keyframes card-entrance {
+    from {
+        opacity: 0;
+        margin-top: 2rem;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+
+/* ==============================
+   DIALOG / MODALS
+================================= */
+
+dialog {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: white;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 500px;
+}
+
+dialog::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+dialog h2 {
+    color: #12355b;
+}
+
+dialog li {
+    margin-bottom: 0.6rem;
+    line-height: 1.5;
+}
+
+.close-modal {
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #12355b;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    background-color: #f4b942;
+    color: #12355b;
+}
+
+
+/* ==============================
+   THANK YOU PAGE
+================================= */
+
+.thankyou {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.thankyou h2 {
+    color: #12355b;
+}
+
+.thankyou p {
+    line-height: 1.5;
+}
+
+.submitted-info {
+    margin-top: 1.5rem;
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+}
+
+.submitted-info p {
+    padding: 0.75rem;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.submitted-info strong {
+    color: #12355b;
+}
