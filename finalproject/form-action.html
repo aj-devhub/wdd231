@@ -8,7 +8,7 @@
 
     <meta
         name="description"
-        content="Explore popular dishes from different countries and learn about their categories, ingredients, and origins."
+        content="View the food suggestion submitted to the World Food Guide."
     >
 
     <meta
@@ -19,12 +19,12 @@
     <!-- Open Graph Metadata -->
     <meta
         property="og:title"
-        content="World Food Guide | Foods"
+        content="World Food Guide | Form Results"
     >
 
     <meta
         property="og:description"
-        content="Explore popular dishes from different countries and discover their ingredients and origins."
+        content="View your submitted food suggestion."
     >
 
     <meta property="og:type" content="website">
@@ -36,10 +36,10 @@
 
     <meta
         property="og:url"
-        content="https://aj-devhub.github.io/wdd231/final/foods.html"
+        content="https://aj-devhub.github.io/wdd231/final/form-action.html"
     >
 
-    <title>World Food Guide | Foods</title>
+    <title>World Food Guide | Form Results</title>
 
     <link rel="icon" href="images/favicon.ico">
 
@@ -96,11 +96,7 @@
                 </li>
 
                 <li>
-                    <a
-                        href="foods.html"
-                        class="active"
-                        aria-current="page"
-                    >
+                    <a href="foods.html">
                         Foods
                     </a>
                 </li>
@@ -121,40 +117,22 @@
 
         <section>
 
-            <h1>Explore Foods</h1>
+            <h1>Food Suggestion Submitted</h1>
 
             <p>
-                Discover popular dishes from different
-                countries and learn about their ingredients,
-                categories, and origins.
+                Thank you for submitting a food suggestion
+                to the World Food Guide.
             </p>
 
-            <p id="last-viewed"></p>
-
-        </section>
-
-        <section>
-
-            <div id="food-container">
-                <p>Loading foods...</p>
+            <div id="form-results">
+                <p>Loading your submission...</p>
             </div>
 
-            <dialog
-                id="food-modal"
-                aria-labelledby="modal-title"
-            >
-
-                <button
-                    id="modal-close"
-                    type="button"
-                    aria-label="Close food details"
-                >
-                    &times;
-                </button>
-
-                <div id="modal-content"></div>
-
-            </dialog>
+            <p>
+                <a href="countries.html" class="button">
+                    Return to Countries
+                </a>
+            </p>
 
         </section>
 
@@ -181,12 +159,10 @@
         <p>
             <a href="https://youtube.com/shorts/i2Xhuj-dZDs" target="_blank" rel="noopener noreferrer"> Watch Project Demonstration Video</a>
         </p>
-
     </footer>
 
     <script type="module" src="scripts/main.js"></script>
-
-    <script type="module" src="scripts/foods.js"></script>
+    <script type="module" src="scripts/form-action.js"></script>
 
 </body>
 

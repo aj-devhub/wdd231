@@ -1,0 +1,109 @@
+{
+    "foods": [
+        {
+            "name": "Jollof Rice",
+            "country": "Nigeria",
+            "category": "African",
+            "description": "A popular rice dish cooked with tomatoes, peppers, onions, and spices.",
+            "ingredients": "Rice, tomatoes, peppers, onions, spices"
+        },
+        {
+            "name": "Egusi Soup",
+            "country": "Nigeria",
+            "category": "African",
+            "description": "A traditional Nigerian soup made with ground melon seeds and vegetables.",
+            "ingredients": "Egusi seeds, spinach, meat, peppers, palm oil"
+        },
+        {
+            "name": "Injera",
+            "country": "Ethiopia",
+            "category": "African",
+            "description": "A soft fermented flatbread commonly served with Ethiopian stews.",
+            "ingredients": "Teff flour, water, salt"
+        },
+        {
+            "name": "Couscous",
+            "country": "Morocco",
+            "category": "African",
+            "description": "A North African dish made from small steamed granules of semolina.",
+            "ingredients": "Semolina, water, vegetables, spices"
+        },
+        {
+            "name": "Sushi",
+            "country": "Japan",
+            "category": "Asian",
+            "description": "A Japanese dish featuring seasoned rice combined with seafood or vegetables.",
+            "ingredients": "Rice, seafood, seaweed, vinegar"
+        },
+        {
+            "name": "Ramen",
+            "country": "Japan",
+            "category": "Asian",
+            "description": "A Japanese noodle dish served in a flavorful broth with various toppings.",
+            "ingredients": "Noodles, broth, vegetables, meat"
+        },
+        {
+            "name": "Pad Thai",
+            "country": "Thailand",
+            "category": "Asian",
+            "description": "A popular Thai stir-fried noodle dish with a sweet and savory flavor.",
+            "ingredients": "Rice noodles, eggs, tofu, peanuts, vegetables"
+        },
+        {
+            "name": "Biryani",
+            "country": "India",
+            "category": "Asian",
+            "description": "A fragrant rice dish cooked with spices, meat, or vegetables.",
+            "ingredients": "Rice, spices, meat, onions, herbs"
+        },
+        {
+            "name": "Pizza",
+            "country": "Italy",
+            "category": "European",
+            "description": "A baked flatbread traditionally topped with tomato sauce, cheese, and other ingredients.",
+            "ingredients": "Flour, tomatoes, cheese, herbs"
+        },
+        {
+            "name": "Paella",
+            "country": "Spain",
+            "category": "European",
+            "description": "A Spanish rice dish traditionally prepared with seafood, meat, and vegetables.",
+            "ingredients": "Rice, seafood, vegetables, saffron"
+        },
+        {
+            "name": "Moussaka",
+            "country": "Greece",
+            "category": "European",
+            "description": "A layered Mediterranean dish commonly made with eggplant, meat, and sauce.",
+            "ingredients": "Eggplant, minced meat, tomatoes, sauce"
+        },
+        {
+            "name": "Croissant",
+            "country": "France",
+            "category": "European",
+            "description": "A buttery, flaky pastry commonly associated with French cuisine.",
+            "ingredients": "Flour, butter, milk, yeast"
+        },
+        {
+            "name": "Tacos",
+            "country": "Mexico",
+            "category": "North American",
+            "description": "A Mexican dish consisting of a tortilla filled with various savory ingredients.",
+            "ingredients": "Tortilla, meat, vegetables, salsa"
+        },
+        {
+            "name": "Hamburger",
+            "country": "United States",
+            "category": "North American",
+            "description": "A sandwich made with a cooked patty served inside a sliced bun.",
+            "ingredients": "Beef, bun, lettuce, tomato, onion"
+        },
+        {
+            "name": "Poutine",
+            "country": "Canada",
+            "category": "North American",
+            "description": "A Canadian dish made with fries topped with cheese curds and gravy.",
+            "ingredients": "Potatoes, cheese curds, gravy"
+        }
+    ]
+}

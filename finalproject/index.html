@@ -1,11 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <meta
+        name="description"
+        content="Explore popular foods, dishes, ingredients, and cuisines from countries around the world with the World Food Guide.">
+
+    <meta
+        name="author"
+        content="Arowolaje Joshua Oluwatimileyin">
+
+    <!-- Open Graph Metadata -->
+    <meta
+        property="og:title"
+        content="World Food Guide | Explore Foods Around the World">
+
+    <meta
+        property="og:description"
+        content="Discover foods, dishes, ingredients, and cuisines from around the world.">
+
+    <meta property="og:type" content="website">
+
+    <meta
+        property="og:image"
+        content="images/hero-food.jpg"
+    >
+
+    <meta
+        property="og:url"
+        content="https://aj-devhub.github.io/wdd231/final/">
+
+    <title>World Food Guide | Home</title>
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
+
 <body>
-    <h1>Good</h1>
+
+    <header>
+
+        <div class="site-header">
+
+            <a href="index.html" class="site-logo">
+                World Food Guide
+            </a>
+
+            <button
+                id="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navigation"
+            >
+                ☰
+            </button>
+
+        </div>
+
+        <nav id="navigation" aria-label="Main navigation">
+
+            <ul>
+
+                <li>
+                    <a
+                        href="index.html"
+                        class="active"
+                        aria-current="page"
+                    >
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="foods.html">
+                        Foods
+                    </a>
+                </li>
+
+                <li>
+                    <a href="countries.html">
+                        Countries
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <img
+                src="images/hero-food.jpg"
+                alt="A selection of foods from around the world"
+            >
+
+            <div class="hero-content">
+
+                <h1>Explore Foods Around the World</h1>
+
+                <p>
+                    Discover popular dishes, ingredients,
+                    countries, and food cultures from around
+                    the world.
+                </p>
+
+                <a href="foods.html" class="button">
+                    Explore Foods
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="introduction">
+
+            <h2>Welcome to World Food Guide</h2>
+
+            <p>
+                Food connects people and cultures around the
+                world. Explore popular dishes, discover where
+                they come from, and learn about the ingredients
+                and traditions behind them.
+            </p>
+
+        </section>
+
+        <section class="featured-foods">
+
+            <h2>Featured Foods</h2>
+
+            <p>
+                Discover some of the dishes you can explore
+                throughout the World Food Guide.
+            </p>
+
+            <div id="featured-food-container">
+                <!-- Featured foods will be generated with JavaScript -->
+            </div>
+
+        </section>
+
+        <section class="food-categories">
+
+            <h2>Explore Food Categories</h2>
+
+            <div class="category-container">
+
+                <article class="category">
+
+                    <h3>African Cuisine</h3>
+
+                    <p>
+                        Discover flavorful dishes and traditional
+                        foods from African countries.
+                    </p>
+
+                </article>
+
+                <article class="category">
+
+                    <h3>Asian Cuisine</h3>
+
+                    <p>
+                        Explore popular dishes and unique
+                        ingredients from across Asia.
+                    </p>
+
+                </article>
+
+                <article class="category">
+
+                    <h3>European Cuisine</h3>
+
+                    <p>
+                        Learn about traditional dishes and food
+                        cultures from European countries.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p> 
+            &copy; <span id="current-year"></span> A WDD231 Web Development Project | Arowolaje Joshua
+        </p>
+
+        <p>
+            <a href="attributions.html">
+                Attributions
+            </a>
+        </p>
+
+        <p>
+            <a href="form-action.html">
+                Form Results
+            </a>
+        </p>
+
+        <p>
+            <a href="https://youtube.com/shorts/i2Xhuj-dZDs" target="_blank" rel="noopener noreferrer"> Watch Project Demonstration Video</a>
+        </p>
+
+    </footer>
+
+    <script type="module" src="scripts/main.js"></script>
+
 </body>
+
 </html>

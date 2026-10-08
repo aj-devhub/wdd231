@@ -1,0 +1,65 @@
+/* Larger Screens */
+
+@media (min-width: 700px) {
+
+    /* Header */
+
+    .site-header {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 1.25rem 2rem;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    /* Navigation */
+
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 0.8rem 1.5rem;
+    }
+
+    /* Main */
+
+    main {
+        margin: 2rem auto;
+    }
+
+    /* Hero */
+
+    .hero-content {
+        padding: 2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    /* Featured Foods */
+
+    #featured-food-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Food Categories */
+
+    .category-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Footer */
+
+    footer {
+        padding: 2rem;
+    }
+}
